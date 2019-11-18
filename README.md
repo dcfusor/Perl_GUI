@@ -18,7 +18,10 @@ Even that isn't easy enough.  So I provide some templates for the Linux "create 
 Those go into /home/youruser/Templates.  You can now create a boilerplate perl GUI that should work 
 as soon as you make it runnable, and edit to your heart's content.
 
-I used lots of comments - there is a choice of having the glade file internal to your perl script or external.  
-The example puts the minimal one right inside the script for easy demo.  But when really doing this, it's
+I used lots of comments - you might need a syntax-highlighting editor to find the code in there.
+FWIW, I use Geany, sublime text, gedit...whatever you like should do fine.
+
+There is a choice of having the glade file internal to your perl script or external.  
+The example puts the minimal one right inside the script for easy demo.  But when really developing this, it's
 usually better to have it as a separate file, so Glade can work with it until you're ready to ship.  For that mode
 you use createguitfile() instead of createguilocal() in the initialize() function.  Simples.
